@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patter validation</title>
+</head>
+<body>
+     <form action="">
+    <label for="name">User name :</label>
+    <input type="text" id="name" name="name" pattern="^[A-Z]{1}[a-z]{1,} [A-Z]{1}[a-z]{1,}$">
+    <br>
+    <br>
+    <label for="pass">Password :</label>
+    <input type="text" id="pass" name="password" pattern="^(?=.*[a-z])(?=(?:.*[A-Z]){2,})(?=(.*\d){2})(?=.*[*%#$]).{4,10}$" required>
+
+    <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
